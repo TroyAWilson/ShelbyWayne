@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelby W | CMT </title>
+    <link rel="icon" href="images/flower.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<!-- https://www.amtamassage.org/index.html -->
+<!-- https://www.facebook.com/ShelbyShaferCMT/?__xts__[0]=33.%7B%22logging_data%22%3A%7B%22event_type%22%3A%22clicked_view_page_services%22%2C%22impression_info%22%3A%22eyJmIjp7InBhZ2VfaWQiOiI4MDI2MDY5MDY2MDgxNTQiLCJpdGVtX2NvdW50IjoiMCJ9fQ%22%2C%22surface%22%3A%22www_pages_home%22%2C%22interacted_story_type%22%3A%221591709614453924%22%2C%22session_id%22%3A%22a0a98682ab603f7376d2a4f120e62666%22%7D%7D -->
+<!--
+  .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+} -->
+    <main>
+      <header class = "main-header">
+        <div class="header-logo">
+          <img class = "flower-img" id = "flower-img" src="images/flower (1).svg" alt="">
+        </div>
+        <nav class = "header-nav">
+          <ul class = "nav-list" id="nav-list">
+            <li class = "nav-item"><a href="#services">Massage</a></li>
+            <li class = "nav-item"><a href="#about">About</a></li>
+            <li class = "nav-item"><a href="#price">Price</a></li>
+            <li class = "nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="intro-piece">
+          <h1>Shelby Wayne</h1>
+          <h3>Certified Massage Therapist</h3>
+          <a href="#" class = "theother">Learn About Me</a>
+          <a href="#" class = "theother">Book a Massage</a>
+      </div>
+      <div class="about-container" id = "about">
+          <h2>About me</h2>
+          <p>My name is Shelby Shafer, I am a Certified Massage Therapist located in Napa Valley, California. I graduated from National Holistic Institute after completing the 900 hour program. </p>
+          <p>I am certified in many modalities including sweetish, deep tissue, pregnancy massage and more. You can click on “Services” to see what various techniques I use in my work, and click “Rates” to view prices. My goal every session is for my clients to leave with a greater sense of well-being, I believe everyone has the right to feel good.</p>
+          <p>Wether you need deep focused work or just a light relaxing massage my intent is to help you improve your day to day life. I became a massage therapist to make people feel good, And I love what I do!</p>
+          <p>If you would like to set up an appointment with me, click on "Contact Me" and send me a message. I will call you back to confirm the details of your appointment, and also answer any questions you might have.</p>
+          <p>Thanks for visiting, and have a great day.</p>
+      </div>
+      <div class="services-main-container" id="services">
+        <h2>Services</h2>
+        <div class="services-sub-container">
+          <img src="http://placeimg.com/100/100/nature" alt="">
+          <h4 id = "service-title">Swedish Massage</h4>
+          <p id = "service-text">Swedish Massage is designed to energize the body by stimulating circulation. It combines oils or lotion with an array of strokes such as effleurage, petrissage, vibration, tapotement, and friction. The benefits of this type of bodywork are relief from aches and pains, decreased stress levels in the body, and enhanced mental state.</p>
+        </div>
+        <div class="dot-container">
+          <span class ="dot"></span>
+          <span class ="dot"></span>
+          <span class ="dot"></span>
+          <span class ="dot"></span>
+          <span class ="dot"></span>
+          <span class ="dot"></span>
+        </div>
+      </div>
+
+      <div class="price-main-container" id="price">
+        <h2>Pricing</h2>
+        <div class="price-sub-container">
+          <div class="pricing-box">
+            <h2 id = "sixty-min-price">$75.00</h2>
+            <h2>60 minute massage</h2>
+            <p> A 60 minute massage, customized to fit your specific needs. </p>
+            <input type="radio" name="stone-check" value="full-body-stone" id ="full-body-stone"> Full body hot stone upgrade <br>
+            <input type="radio" name="stone-check" value="hot-cold-stone" id = "hot-cold-stone"> Hot or cold stone add on <br>
+            <input type="radio" name="stone-check" value="no-stone" id = "no-sixtey"> No additional add ons/upgrades <br>
+
+            <!-- if(document.getElementById('full-body-stone').checked) {
+              //when the radio box is checked change the total price
+            }else if(document.getElementById('hot-cold-stone').checked) {
+              //when the radio box is checked change the total price
+            } -->
+            <a href="#" class = "get-a-quote">Get a quote</a>
+          </div>
+          <div class="pricing-box">
+            <h2 id = "ninety-min-price">$95.00</h2>
+            <h2>90 minute massage</h2>
+            <p>A 90 minute massage, customized to fit your specific needs.</p>
+            <form class="" action="index.html" method="post">
+              <input type="radio" name="something" value="full-body-stone"> Full body hot stone upgrade <br>
+              <input type="radio" name="something" value="hot-cold-stone"> Hot or cold stone add on <br>
+              <input type="radio" name="something" value="no-stone"> No additional add ons/upgrades <br>
+            </form>
+            <a href="#" class = "get-a-quote">Get a quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-container" id= "contact">
+        <h2>Contact</h2>
+        <form method="post" name="contactform" action="mailto:TroyAWilson@gmail.com" >
+          <!-- action="scripts/formSend.php" -->
+          <div class ="form-input">
+            <label for ="name">Name:</label>
+            <input type ="text" id="name" name="name">
+          </div>
+
+          <div class ="form-input">
+            <label for ="email">Email:</label>
+            <input type ="email" id="email" name="email">
+          </div>
+
+          <div class ="form-input">
+            <label for ="subject">Subject:</label>
+            <input type ="text" id="subject" name="subject">
+          </div>
+
+          <div class ="form-input">
+            <label for ="message">Message:</label>
+            <textarea id ="message" name ="message">
+            </textarea>
+            <button type="submit" value="submit" class="contact-submit-button">Submit</button>
+            <!-- Need to remove default behavior on this button -->
+          </div>
+        </form>
+      </div>
+
+      <footer>
+          <div class="footer-container">
+            <p>(707) 266-8271</p>
+            <img src="images/amta_logo.png" alt="">
+          </div>
+          <div class = "icon-ad">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </footer>
+
+    </main>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+
+
+</html>
