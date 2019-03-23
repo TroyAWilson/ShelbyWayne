@@ -54,13 +54,13 @@ h3{
 .nav-list{
   margin:auto;
   padding:0;
-  display: flex;
+  display: none;
   list-style: none;
   transform:translateX(500px);
   transition: 1s;
 }
 .nav-item{
-  margin: 5%;
+  margin: 4%;
   transition: 1s;
 }
 .nav-item a {
@@ -79,13 +79,13 @@ h3{
 }
 .about-container{
   margin:5%;
-  text-align: justify;
+  text-align: left;
 }
 .services-sub-container{
   margin:5%;
 }
 .services-sub-container p{
-  text-align: justify;
+  text-align: left;
 }
 .services-sub-container h4{
   text-transform: uppercase;
@@ -149,7 +149,12 @@ display: inline-block;
 .icon-ad{
   font-size: .5em;
 }
-
+.pink{
+  color: #ff4162;
+}
+.mything{
+  font-size: .8em;
+}
 
 
 
@@ -178,11 +183,11 @@ This part down here was just straight ripped form my own website and I need to g
 .contact-container {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 5%;
   max-width: 100%; }
-  @media (min-width: 720px) {
+  /* @media (min-width: 720px) {
     .contact-container {
-      flex-direction: row; } }
+      flex-direction: row; } } */
 
 .contact-info {
   margin-bottom: 75px; }

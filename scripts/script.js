@@ -23,12 +23,12 @@ flower.onclick = function(){
 
 
   if (menu.style.transform != "translateX(0px)"){
-    console.log("here?");
-    menu.style.transform = "translateX(0px)"
+    menu.style.display = "flex";
+    setTimeout(function(){menu.style.transform = "translateX(0px)"},100);
   }
   else{
-    console.log("Where am I??");
     menu.style.transform = 'translateX(500px)';
+    setTimeout(function(){menu.style.display = "none"},300);
   };
 };
 
@@ -74,3 +74,10 @@ hotColdStone.onclick = function(){
 noSixtey.onclick = function(){
   sixtyPrice.innerHTML = "$75.00";
 };
+
+button = document.getElementsByClassName('contact-submit-button');
+
+button[0].onclick = function(){
+  console.log("????????")
+  button[0].preventDefault();
+}
