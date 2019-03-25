@@ -21,6 +21,7 @@ h2{
   text-align: center;
 }
 h1{
+  margin:0;
   font-size: 3em;
   font-family: 'Pacifico', cursive;
   text-shadow: 4px 4px 2px #FF3F62;
@@ -71,15 +72,58 @@ h3{
   color: white;
   background-color: #FF3F62;
   background-image: url(../images/bath.jpg);
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/* These are the elemnts of paralax scrolling, see https://www.w3schools.com/howto/howto_css_parallax.asp */
+  /* height: 500px;
 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+/***********************************  */
   padding:25%;
 
 }
 .about-container{
-  margin:5%;
+  margin:10% 5%;
   text-align: left;
+}
+.break-image{
+  color: white;
+  background-color: #FF3F62;
+  background-image: url(../images/cherrybloss.jpg);
+/* These are the elemnts of paralax scrolling, see https://www.w3schools.com/howto/howto_css_parallax.asp */
+  height: 100px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/***********************************  */
+  padding:25%;
+
+}
+
+.break-image3{
+  color: white;
+  background-color: #FF3F62;
+  background-image: url(../images/parapink3.jpg);
+/* These are the elemnts of paralax scrolling, see https://www.w3schools.com/howto/howto_css_parallax.asp */
+  height: 100px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/***********************************  */
+  padding:25%;
+
+}
+
+.services-main-container{
+  margin:10% 5%;
 }
 .services-sub-container{
   margin:5%;
@@ -104,6 +148,7 @@ display: inline-block;
   cursor: pointer;
 }
 .price-main-container{
+  margin: 10% 5%;
 }
 .price-sub-container{
   display: flex;
@@ -136,7 +181,7 @@ display: inline-block;
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-  margin:5%;
+  margin: 10% 5%;
   border: 1px solid black;
 }
 .form-input input{
@@ -169,10 +214,6 @@ display: inline-block;
 
 
 
-
-
-
-
 /*
 
 This part down here was just straight ripped form my own website and I need to go through and fix some of the bugs that comes with that
@@ -184,7 +225,8 @@ This part down here was just straight ripped form my own website and I need to g
   display: flex;
   flex-direction: column;
   padding: 5%;
-  max-width: 100%; }
+  max-width: 100%;
+}
   /* @media (min-width: 720px) {
     .contact-container {
       flex-direction: row; } } */
@@ -269,7 +311,7 @@ h6 {
   border-radius: 2px;
   background-color: #FF728B;
   color: white;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin: 25px;
   transition: .5s;
   width: 75%; }
@@ -282,3 +324,73 @@ h6 {
 
 .contact-phone-number {
   margin-right: 50px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+    Media Queries
+   */
+  @media (min-width: 720px) {
+    .intro-piece,.header-nav{
+      font-size: 1.5em;
+    }
+    h2{
+      font-size: 2em;
+    }
+    p,h4{
+      font-size: 1.1em;
+    }
+    span{
+      font-size:1.3em;
+    }
+
+    .dot{
+      height:20px;
+      width:20px;
+    }
+  }
+
+  @media(min-width:1000px){
+    .flower-img{
+      width: 5%;
+    }
+    h1{
+      font-size: 5em;
+    }
+    .intro-piece{
+      padding:15%;
+    }
+    .price-sub-container{
+      flex-direction: row;
+    }
+    .contact-container{
+      width:50%;
+      margin:auto;
+      margin-top: 5%;
+    }
+    .about-container{
+      padding: 0 10%;
+    }
+    .theother{
+      margin:1%;
+      padding:1%;
+    }
+  }
