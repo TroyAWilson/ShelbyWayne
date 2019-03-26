@@ -1,4 +1,5 @@
 /* #FF728B */
+/* #FF728B */
 
 
 *{
@@ -159,7 +160,7 @@ display: inline-block;
   margin: 5%;
   padding:2%;
   max-width: 250%;
-  background-color: whitesmoke;
+  background-color: mistyrose;
   border: 1px solid black;
   text-align: center;
 }
@@ -180,7 +181,7 @@ display: inline-block;
 .contact-container{
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: mistyrose;
   margin: 10% 5%;
   border: 1px solid black;
 }
@@ -200,14 +201,25 @@ display: inline-block;
 .mything{
   font-size: .8em;
 }
+footer{
+  margin-top: 5%;
+  padding: 1%;
+  background-color: mistyrose;
+}
 
 
 
+.contact-big{
+  display: flex;
+  flex-direction: column;
+}
+.contact-side{
+  background-color: mistyrose;
+  padding: 5%;
+  margin: 5%;
+  border:1px solid black;
 
-
-
-
-
+}
 
 
 
@@ -361,11 +373,6 @@ h6 {
     span{
       font-size:1.3em;
     }
-
-    .dot{
-      height:20px;
-      width:20px;
-    }
   }
 
   @media(min-width:1000px){
@@ -376,7 +383,7 @@ h6 {
       font-size: 5em;
     }
     .intro-piece{
-      padding:15%;
+      padding:17%;
     }
     .price-sub-container{
       flex-direction: row;
@@ -392,5 +399,19 @@ h6 {
     .theother{
       margin:1%;
       padding:1%;
+    }
+    .services-sub-container{
+      padding: 0 15%;
+    }
+    .contact-container{
+      width: 50%;
+      margin:5%;
+    }
+    .contact-big{
+      flex-direction: row;
+    }
+    .contact-side{
+      margin-bottom: 30%;
+      padding: 2% 10%;
     }
   }

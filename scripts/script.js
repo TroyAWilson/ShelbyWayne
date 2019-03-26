@@ -4,11 +4,16 @@ textTitle = document.getElementById("service-title");
 flower = document.getElementById("flower-img");
 menuItem = document.getElementsByClassName('nav-item');
 menu = document.getElementById('nav-list');
+
 sixtyPrice = document.getElementById('sixty-min-price');
 ninetyPrice = document.getElementById('ninety-min-price');
 fullBodyStone = document.getElementById('full-body-stone');
 hotColdStone = document.getElementById('hot-cold-stone');
 noSixtey = document.getElementById('no-sixtey');
+
+fullBodyNinety = document.getElementById('full-body-ninety');
+hotColdNinety = document.getElementById('hot-cold-ninety');
+noNinety = document.getElementById('no-ninety');
 
 
 
@@ -74,6 +79,21 @@ hotColdStone.onclick = function(){
 noSixtey.onclick = function(){
   sixtyPrice.innerHTML = "$75.00";
 };
+
+// Ninety base prices
+fullBodyNinety.onclick = function(){
+  ninetyPrice.innerHTML = "$135.00";
+};
+
+hotColdNinety.onclick = function(){
+  ninetyPrice.innerHTML = "$115.00";
+};
+
+noNinety.onclick = function(){
+  ninetyPrice.innerHTML = "$95.00";
+};
+
+
 
 button = document.getElementsByClassName('contact-submit-button');
 
