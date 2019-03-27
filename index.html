@@ -13,14 +13,16 @@
 <!-- https://www.amtamassage.org/index.html -->
 <!-- https://www.facebook.com/ShelbyShaferCMT/?__xts__[0]=33.%7B%22logging_data%22%3A%7B%22event_type%22%3A%22clicked_view_page_services%22%2C%22impression_info%22%3A%22eyJmIjp7InBhZ2VfaWQiOiI4MDI2MDY5MDY2MDgxNTQiLCJpdGVtX2NvdW50IjoiMCJ9fQ%22%2C%22surface%22%3A%22www_pages_home%22%2C%22interacted_story_type%22%3A%221591709614453924%22%2C%22session_id%22%3A%22a0a98682ab603f7376d2a4f120e62666%22%7D%7D -->
     <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
       <header class = "main-header">
         <div class="header-logo">
           <img class = "flower-img" id = "flower-img" src="images/flower (1).svg" alt="">
         </div>
         <nav class = "header-nav">
           <ul class = "nav-list" id="nav-list">
-            <li class = "nav-item"><a href="#services">Massage</a></li>
             <li class = "nav-item"><a href="#about">About</a></li>
+            <li class = "nav-item"><a href="#services">Services</a></li>
             <li class = "nav-item"><a href="#price">Price</a></li>
             <li class = "nav-item"><a href="#contact">Contact</a></li>
           </ul>
@@ -37,9 +39,9 @@
       <div class="about-container" id = "about">
           <h2>About me</h2>
           <p>My name is Shelby Wayne, I am a Certified Massage Therapist located in Napa Valley, California. I graduated from National Holistic Institute after completing the 900 hour program. </p>
-          <p>I am certified in many modalities including sweetish, deep tissue, pregnancy massage and more. You can click on “Services” to see what various techniques I use in my work, and click “Rates” to view prices. My goal every session is for my clients to leave with a greater sense of well-being, I believe everyone has the right to feel good.</p>
+          <p>I am certified in many modalities including sweetish, deep tissue, pregnancy massage and more. You can see the “Services” section to see what various techniques I use in my work, and see the “Pricing” section to view prices. My goal every session is for my clients to leave with a greater sense of well-being, I believe everyone has the right to feel good.</p>
           <p>Wether you need deep focused work or just a light relaxing massage my intent is to help you improve your day to day life. I became a massage therapist to make people feel good, And I love what I do!</p>
-          <p>If you would like to set up an appointment with me, click on "Contact Me" and send me a message. I will call you back to confirm the details of your appointment, and also answer any questions you might have.</p>
+          <p>If you would like to set up an appointment with me, see the "Contact" section and send me a message. I will call you back to confirm the details of your appointment, and also answer any questions you might have.</p>
           <p>Thanks for visiting, and have a great day.</p>
       </div>
 
@@ -71,7 +73,7 @@
             <p> A 60 minute massage, customized to fit your specific needs. </p>
             <input type="radio" name="stone-check" value="full-body-stone" id ="full-body-stone"> <span>Full body hot stone upgrade</span> <br>
             <input type="radio" name="stone-check" value="hot-cold-stone" id = "hot-cold-stone"> <span>Hot or cold stone add on</span> <br>
-            <input type="radio" name="stone-check" value="no-stone" id = "no-sixtey"> <span>No additional add ons/upgrades</span> <br>
+            <input type="radio" name="stone-check" value="no-stone" checked="checked" id = "no-sixtey"> <span>No additional add ons/upgrades</span> <br>
 
             <!-- if(document.getElementById('full-body-stone').checked) {
               //when the radio box is checked change the total price
@@ -85,9 +87,9 @@
             <h2>90 minute massage</h2>
             <p>A 90 minute massage, customized to fit your specific needs.</p>
             <form class="" action="index.html" method="post">
-              <input type="radio" name="stone-check" value="full-body-stone" id="full-body-ninety"> <span>Full body hot stone upgrade</span> <br>
-              <input type="radio" name="stone-check" value="hot-cold-stone" id="hot-cold-ninety"> <span>Hot or cold stone add on</span> <br>
-              <input type="radio" name="stone-check" value="no-stone" id="no-ninety"> <span>No additional add ons/upgrades</span> <br>
+              <input type="radio" name="stone-check" value="full-body-stone" id ="full-body-ninety"> <span>Full body hot stone upgrade</span> <br>
+              <input type="radio" name="stone-check" value="hot-cold-stone" id ="hot-cold-ninety"> <span>Hot or cold stone add on</span> <br>
+              <input type="radio" name="stone-check" value="no-stone" checked="checked" id ="no-ninety"> <span>No additional add ons/upgrades</span> <br>
             </form>
             <a href="#contact" class = "get-a-quote">Get a quote</a>
           </div>
@@ -129,9 +131,11 @@
 
       <div class="contact-side">
         <h2>Socials</h2>
+        <p class = "test">Give me a call:</p>
         <p>(707) 266-8271</p>
-        <a href="https://www.facebook.com/ShelbyShaferCMT/"><p>Facebook</p></a>
-        <a href="#"> <p>Instagram</p</a>
+        <p class = "test">Be social here:</p>
+        <a class="social-link" href="https://www.facebook.com/ShelbyShaferCMT/"><p>Facebook</p></a>
+        <a class="social-link" href="https://www.instagram.com/shelbywaynecmt/?utm_source=ig_profile_share&igshid=1k6zi9tw9jqq8&fbclid=IwAR2GJFL9usx-y19Q-uX8D8wpKHzlNNR5fBf7AyifNbKnQr0WRARf0jffy-A"> <p>Instagram</p></a>
       </div>
       </div>
       <footer>
