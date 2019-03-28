@@ -427,6 +427,9 @@ h6 {
     .price-sub-container{
       flex-direction: row;
     }
+    .pricing-box{
+      margin:9%;
+    }
     .contact-container{
       width:50%;
       margin:auto;
